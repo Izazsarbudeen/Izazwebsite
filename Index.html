@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .profile-header h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        .profile-header p {
+            font-size: 1.2em;
+            color: #777;
+        }
+        .description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 40px;
+        }
+        .projects, .accounts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project, .account {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project:hover, .account:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .project h3, .account h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .project p, .account p {
+            color: #777;
+            font-size: 1em;
+        }
+        .account a, .project a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .account img, .project img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .project img {
+            width: 40px;
+            height: 40px;
+        }
+        .project, .account {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <img src="https://avatars.githubusercontent.com/u/166972698?v=4" alt="Profile Picture">
+            <h1>Izazsarbudeen</h1>
+            <p>Open Source Contributor | Python Programmer | Electrical Engineer</p>
+        </div>
+
+        <div class="description">
+            <p>
+                I am <strong>Sarbudeen</strong>, an Indian Open-Source Developer from <a href="https://en.m.wikipedia.org/wiki/Cuddalore">Cuddalore, Tamil Nadu, India</a>.
+                I am an Electrical Engineer (Bachelor of Electrical and Electronics Engineering).<br><br>
+                I have created several open-source projects like Python packages, Telegram bots, and more. You can check them out on <a href="https://github.com/Izazsarbudeen" target="_blank">GitHub</a>.
+            </p>
+        </div>
+
+        <div class="projects">
+            <div class="project" style="background-color: white;">
+                <h3>Personal Website</h3>
+                <p>My personal website.</p>
+            </div>
+            <div class="project">
+                <h3>GitHub Repositories</h3>
+                <p>You can check and use my open-source repositories on <a href="https://github.com/izazsarbudeen?tab=repositories" target="_blank">GitHub</a>.</p>
+                <img src="https://github.com/Izazsarbudeen/izazsarbudeen.github.io/blob/main/images%20(42).jpeg" alt="GitHub Repositories">
+            </div>
+            <div class="project" style="background-color: #3775A9;">
+                <h3>Python Packages</h3>
+                <p>Check out and use my Python packages on <a href="https://izazsarbudeen.github.io/" target="_blank">my website</a>.</p>
+                <img src="https://www.pngwing.com/en/free-png-zllyc" alt="Python Packages">
+            </div>
+        </div>
+
+        <div class="accounts">
+            <div class="account">
+                <h3>Telegram</h3>
+                <p>Contact me directly via <a href="https://telegram.me/sarbudeen786" target="_blank">Telegram</a>.</p>
+                <img src="https://cdn.simpleicons.org/telegram/#26A5E4" alt="Telegram">
+            </div>
+            <div class="account">
+                <h3>GitHub</h3>
+                <p>Check out my GitHub profile and repositories at <a href="https://github.com/izazsarbudeen" target="_blank">GitHub</a>.</p>
+                <img src="https://cdn.simpleicons.org/github/#181717" alt="GitHub">
+            </div>
+            <div class="account">
+                <h3>Instagram</h3>
+                <p>Follow me and message me on <a href="https://instagram.com/izazkhan_786_" target="_blank">Instagram</a>.</p>
+                <img src="https://cdn.simpleicons.org/instagram/#E4405F" alt="Instagram">
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Sarbudeen. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
